@@ -1,0 +1,40 @@
+generated: '2026-07-18'
+method: derived
+source: https://api.github.com/orgs/codex-protocol
+name: Codex Protocol Lifecycle
+description: >-
+  Lifecycle and operational status for Codex Protocol, derived from GitHub
+  organization metadata, repository archival state, and live domain probes.
+status: defunct
+summary: >-
+  Codex Protocol (a decentralized registry for unique physical assets — art,
+  fine wine, watches) was founded in 2018 and is no longer operating. Its
+  primary product API and web dapp repositories are archived, its developer
+  documentation host no longer resolves, and its marketing domain has been
+  repurposed by a third party.
+evidence:
+  - claim: GitHub organization founded 2018-01-10; last repository activity 2023-04-24.
+    source: https://api.github.com/orgs/codex-protocol
+  - claim: >-
+      The Codex Registry REST API repository (deprecated.service.codex-registry-api)
+      is explicitly named "deprecated." and is GitHub-archived (last push 2019-02-19).
+    source: https://github.com/codex-protocol/deprecated.service.codex-registry-api
+  - claim: >-
+      The Codex Viewer web dapp (deprecated.web.codex-viewer) is likewise named
+      "deprecated." and GitHub-archived (last push 2019-08-08).
+    source: https://github.com/codex-protocol/deprecated.web.codex-viewer
+  - claim: Developer documentation host dev.codexprotocol.com no longer resolves (NXDOMAIN).
+    source: dns-probe 2026-07-18
+  - claim: >-
+      Marketing domain codexprotocol.com now returns HTTP 301 redirecting to an
+      unrelated third-party gambling review (trustpilot.com/review/xsbets.com);
+      the domain no longer represents the company.
+    source: http-probe 2026-07-18
+deprecation:
+  policy_published: false
+  status: >-
+    No formal deprecation/sunset policy was ever published. Deprecation is
+    signaled implicitly via the "deprecated." repository naming prefix and
+    GitHub archival flags. The entire product is end-of-life.
+status_page:
+  present: false

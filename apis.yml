@@ -1,21 +1,55 @@
 aid: codex-protocol
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/codex-protocol.png
 name: Codex Protocol
-description: 'Codex Protocol is a company surfaced as a portfolio company of pantera-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Codex Protocol was a blockchain startup (founded 2018, backed by Pantera
+  Capital) that built a decentralized registry for unique physical assets —
+  fine art, wine, watches and other collectibles — on Ethereum, using ERC-721
+  Codex Records and an ERC-20 Codex Coin (CODX) token, plus a Codex Viewer dapp
+  and a Codex Registry REST API. The company is now defunct: its API and dapp
+  repositories are archived, its documentation host no longer resolves, and its
+  original marketing domain (codexprotocol.com) has been repurposed by a third
+  party and redirects offsite. The surviving, verifiable first-party artifacts
+  are the codex-protocol GitHub organization (13 repositories of smart
+  contracts, services, and tooling) and four @codex-protocol npm packages.
+  This profile was surfaced as a Pantera Capital portfolio company and is
+  retained in the API Evangelist network as a historical / defunct record.
 url: https://raw.githubusercontent.com/api-evangelist/codex-protocol/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
+x-status: defunct
+x-former-website: https://codexprotocol.com/
+x-former-website-note: >-
+  Domain repurposed; as of 2026-07-18 it 301-redirects to an unrelated
+  third-party gambling review and no longer represents the company.
 x-backed-by:
 - pantera-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Crypto
+- Blockchain
+- Ethereum
+- Provenance
+- NFT
+- Registry
+- Collectibles
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +57,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
-- type: Website
-  url: https://codexprotocol.com/
+- type: GitHubOrganization
+  url: https://github.com/codex-protocol
+- type: SourceCode
+  url: https://github.com/codex-protocol
+- type: SDKs
+  url: packages/codex-protocol-packages.yml
+- type: Packages
+  url: packages/codex-protocol-packages.yml
+- type: Lifecycle
+  url: lifecycle/codex-protocol-lifecycle.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

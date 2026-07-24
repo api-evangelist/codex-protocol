@@ -1,0 +1,60 @@
+generated: '2026-07-18'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=codex-protocol
+name: Codex Protocol Packages
+description: >-
+  First-party client and tooling packages published by the Codex Protocol
+  GitHub organization (github.com/codex-protocol) to the npm registry under the
+  @codex-protocol scope. Codex Protocol is defunct; these packages are the
+  surviving, verifiable first-party artifacts. No PyPI, Maven Central, NuGet,
+  RubyGems, Packagist, crates.io or pkg.go.dev packages were found.
+registries:
+  npm: https://www.npmjs.com/org/codex-protocol
+packages:
+  - name: '@codex-protocol/ethereum-service'
+    registry: npm
+    official: true
+    language: JavaScript
+    latest_version: 2.2.2
+    published: '2020-08-15'
+    license: AGPL-3.0-or-later
+    url: https://www.npmjs.com/package/@codex-protocol/ethereum-service
+    source: https://github.com/codex-protocol/npm.ethereum-service
+    description: >-
+      Ethereum service and Codex Protocol smart-contract bindings — the
+      first-party JavaScript library for interacting with the Codex Registry
+      (ERC-721) and Codex Coin (ERC-20) contracts.
+  - name: '@codex-protocol/eslint-config-base'
+    registry: npm
+    official: true
+    language: JavaScript
+    latest_version: 2.0.4
+    published: '2019-12-24'
+    license: MIT
+    url: https://www.npmjs.com/package/@codex-protocol/eslint-config-base
+    source: https://github.com/codex-protocol/npm.eslint-config-base
+    description: Shared Babel ESLint config used across Codex Protocol projects (internal tooling).
+  - name: '@codex-protocol/eslint-config-truffle'
+    registry: npm
+    official: true
+    language: JavaScript
+    latest_version: 2.0.0
+    published: '2019-09-13'
+    license: MIT
+    url: https://www.npmjs.com/package/@codex-protocol/eslint-config-truffle
+    source: https://github.com/codex-protocol/npm.eslint-config-truffle
+    description: Shared Truffle/Solidity ESLint config for Codex Protocol smart-contract projects (internal tooling).
+  - name: '@codex-protocol/eslint-config-vue'
+    registry: npm
+    official: true
+    language: JavaScript
+    latest_version: 2.0.0
+    published: '2018-08-22'
+    license: MIT
+    url: https://www.npmjs.com/package/@codex-protocol/eslint-config-vue
+    source: https://github.com/codex-protocol/npm.eslint-config-vue
+    description: Shared Vue.js ESLint config for Codex Protocol front-end projects (internal tooling).
+notes: >-
+  Only @codex-protocol/ethereum-service is a consumer-facing SDK; the three
+  eslint-config packages are internal shared tooling but are genuine first-party
+  npm publications. All are unmaintained (last publish 2020 or earlier).
